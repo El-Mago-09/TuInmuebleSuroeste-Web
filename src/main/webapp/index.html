@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tu Inmueble Suroeste</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="encabezado">
+    <div class="contenedor">
+        <a class="marca" href="index.html">Tu Inmueble <span>Suroeste</span></a>
+        <nav><a href="inmuebles">Inmuebles</a><a href="inmuebles?accion=nuevo">Publicar</a></nav>
+    </div>
+</header>
+
+<main class="contenedor">
+    <section class="portada">
+        <h1>Encuentra tu inmueble en el Suroeste antioqueño</h1>
+        <p>Casas, fincas, lotes y apartamentos en venta y arriendo.</p>
+
+        <!-- Formulario HTML que envía por GET al servlet /inmuebles -->
+        <form class="buscador" action="inmuebles" method="get">
+            <input type="hidden" name="accion" value="buscar">
+            <label for="municipio">Municipio</label>
+            <input type="text" id="municipio" name="municipio" placeholder="Ej.: Jericó, Andes, Jardín" maxlength="100">
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <section class="tarjetas">
+        <a class="tarjeta" href="inmuebles"><b>Ver todos</b><span>Lista completa de inmuebles publicados</span></a>
+        <a class="tarjeta" href="inmuebles?accion=nuevo"><b>Publicar inmueble</b><span>Registrar un inmueble nuevo</span></a>
+    </section>
+</main>
+
+<footer class="pie">Tu Inmueble Suroeste · Ometh Martinez Potes · SENA ADSO 3336217</footer>
+</body>
+</html>
