@@ -1,0 +1,8 @@
+# Configuracion local con credenciales (no se sube al repositorio)
+db.properties
+
+# Archivos generados al construir
+build/
+dist/
+*.class
+fuentes.txt
